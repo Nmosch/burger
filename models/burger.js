@@ -11,11 +11,14 @@ const burger = {
 
         return result;
     },
-    updateOne: async(updateBurger, id)=>{
-        const result = await orm.updateOne(pdateBurger,id);
+    updateOne: async(id)=>{
+        const result = await orm.updateOne(true, id);
 
         return result;
     }    
 };
+
+// burger.insertOne("BBQ Burger");
+// burger.selectAll();
 
 module.exports = burger;

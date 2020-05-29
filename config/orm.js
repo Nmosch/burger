@@ -11,6 +11,8 @@ const orm = {
 
             console.log(result);
 
+            return result;
+
         }catch (err){
 
             throw err;
@@ -20,11 +22,13 @@ const orm = {
     insertOne: async(newBurger)=>
     {
         try{
-            const query = "INSERT INTO burger VALUES ?";
+            const query = "INSERT INTO burger (burger_name) VALUES (?)";
 
             const result = await connection.query(query, newBurger);
 
             console.log(result);
+
+            return result;
 
         }catch (err){
 
@@ -32,14 +36,16 @@ const orm = {
         }
     },
 
-    updateOne: async(updateBurger,id) =>
+    updateOne: async(updateDevoured,id) =>
     {
         try{
-            const query = "UPDATE burger SET ? WHERE id = ?";
+            const query = "UPDATE burger SET devoured = ? WHERE id = ?";
 
-            const result = await connection.query(query,[updateBurger,id]);
+            const result = await connection.query(query,[updateDevoured,id]);
 
-            console.log(results);
+            console.log(result);
+
+            return result;
         
         }catch (err){
 
