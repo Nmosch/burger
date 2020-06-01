@@ -14,8 +14,7 @@ $(function(){
     });
 
     $(".devoured").on("click", function (event) {
-        event.preventDefault();
-        alert("CLicked");        
+        event.preventDefault();       
         let id = $(this).data("id");
         console.log("id", id)
         $.ajax({
