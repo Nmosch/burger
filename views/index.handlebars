@@ -7,6 +7,7 @@
     <div class="row">
         <div class="col-4">
             <ul>
+                <h3>Your uneaten burgers</h3>
                 {{#each burgers}}
                 {{#unless devoured}}
                 <li>
@@ -18,7 +19,7 @@
             </ul>
         </div>
         <div class="col-4">
-            <img src="" alt="">
+            <h3>Add a new burger to the menu!</h3> 
             <form>
                 <input id="newBurger" type="text">
                 <button id="addBurger">Add burger</button>
@@ -26,7 +27,8 @@
         </div>
 
         <div class="col-4">
-            <ul>
+            <ul> 
+                <h3>Your devoured burgers</h3>
                 {{#each burgers}}
                 {{#if devoured}}
                 <li>

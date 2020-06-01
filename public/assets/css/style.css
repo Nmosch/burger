@@ -1,3 +1,34 @@
 body {
     background-image: url(../images/BB.jpg);
+    background-size: 100%;
+}
+
+h1 {
+    text-align: center;
+    font-family: 'Chelsea Market', cursive;
+    color: rgb(151, 30, 36);
+    font-size: 100px;
+    text-shadow: 2px 2px black;
+}
+
+h3 {
+    text-align: center;
+    font-family: 'Anton', sans-serif;
+    font-size: 30px;
+    letter-spacing: 1px;
+    color: rgb(151, 30, 36);
+    text-shadow: 2px 2px black;
+}
+
+li {
+    font-family: 'Anton', sans-serif;
+    font-size: 20px;
+    letter-spacing: 1px;
+    color: rgb(151, 30, 36);
+    text-shadow: 2px 2px black;
+}
+
+button {
+    font-family: 'Anton', sans-serif;
+    font-size: 20px;
 }
